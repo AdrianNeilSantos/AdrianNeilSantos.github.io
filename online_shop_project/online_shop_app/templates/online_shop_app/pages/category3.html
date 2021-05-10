@@ -1,0 +1,21 @@
+{% extends 'online_shop_app/main.html' %}
+
+{% block content %}
+
+    <!-- Navbar -->
+
+    {% include 'online_shop_app/elements/navbar.html'%}
+
+    <div class="container">
+        <h1>category 3</h1>
+        {% load static %}
+        <img src={% static '/images/category3.jpg' %} class="rounded mx-auto d-block" alt="Zagreus">
+
+    </div>
+
+    
+    <!-- Items -->
+    {% include 'online_shop_app/elements/items.html'%}
+    
+{% endblock content %}
+

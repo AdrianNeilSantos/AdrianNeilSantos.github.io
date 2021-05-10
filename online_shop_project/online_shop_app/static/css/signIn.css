@@ -1,0 +1,23 @@
+#rightPartition{
+    background-color: #ffffffc9; 
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    width: 30%;
+}
+
+#leftPartition{
+    background-color: #bfe9b9c9; 
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    width: 55%;
+}
+
+.row {
+    display: flex;
+    height: 1080px;
+}
+  
+.column {
+    float: left;
+}
+

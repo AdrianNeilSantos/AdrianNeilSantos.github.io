@@ -1,0 +1,65 @@
+{% extends 'online_shop_app/main.html' %}
+
+{% block content %}
+
+{% load static%}
+<link rel="stylesheet" type="text/css" href={% static '/css/login.css' %}>
+<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+
+{% load static%}
+<a href="{% url 'all' %}">COMPANY LOGO</a>
+<img class="wave" src={% static '/images/wave.png' %}>
+<div class="container">
+  <div class="img">
+    {% load static%}
+    <img src={% static '/images/bg.svg' %}>
+  </div>
+  <div class="login-content">
+    <form action="index.html">
+      {% load static%}
+      <img src={% static '/images/avatar.svg' %}>
+      <h2 class="title">Welcome</h2>
+             <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <h5>Username</h5>
+                    <input type="text" class="input">
+                </div>
+             </div>
+
+             <div class="input-div one">
+              <div class="i">
+                  <i class="fas fa-envelope"></i>
+              </div>
+              <div class="div">
+                  <h5>Email</h5>
+                  <input type="text" class="input">
+              </div>
+           </div>
+
+
+             <div class="input-div pass">
+                <div class="i"> 
+                   <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                   <h5>Password</h5>
+                   <input type="password" class="input">
+               </div>
+            </div>
+            <p>By signing up, you agree to the company's nonexistent terms and conditions</p>
+            <p>Have an account? <a href="{% url 'signIn' %}"> Log In</a></p>
+            <input type="submit" class="btn" value="Sign up">
+          </form>
+      </div>
+  </div>
+  {% load static%}
+  <script type="text/javascript" src={% static '/js/login.js' %}></script>
+
+
+  {% endblock content %}
+

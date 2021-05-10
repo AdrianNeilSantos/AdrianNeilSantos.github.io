@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project</title>
+    <!-- Styles -->
+    {% include 'online_shop_app/styles/bootstrap_style.html'%}
+</head>
+<body>
+
+    <div class = "container-fluid">
+
+
+
+        <!-- Content -->
+
+        {% block content %}{% endblock content %}
+
+        <br><br>
+
+
+
+
+        <!-- Footer -->
+        {% include 'online_shop_app/elements/footer.html'%}
+
+    </div>
+
+
+<!-- Scripts -->
+{% include 'online_shop_app/scripts/bootstrap_script.html'%}
+
+</body>
+</html>
